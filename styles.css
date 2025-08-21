@@ -1,1 +1,117 @@
 /* your code here */
+footer {
+  background: #111;
+  color: #fff;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+footer .content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 40px;
+}
+
+footer .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .logo-details .logo_name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+footer .media-icons a {
+  font-size: 18px;
+  height: 40px;
+  width: 40px;
+  margin: 0 8px;
+  border-radius: 50%;
+  background: #fff;
+  color: #111;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+footer .media-icons a:hover {
+  transform: scale(1.1);
+}
+
+footer .link-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+footer .box {
+  list-style: none;
+}
+
+footer .box .link_name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+footer .box .link_name::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 30px;
+  background: #fff;
+}
+
+footer .box li {
+  margin: 8px 0;
+}
+
+footer .box li a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+footer .box li a:hover {
+  opacity: 1;
+  padding-left: 4px;
+}
+
+footer .bottom-details {
+  background: #1c1c1c;
+  padding: 15px 40px;
+}
+
+footer .bottom-details .bottom_text {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .bottom-details .bottom_text span,
+footer .bottom-details .bottom_text a {
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer .bottom-details .bottom_text a:hover {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  footer .link-boxes {
+    flex-direction: column;
+  }
+}
